@@ -30,7 +30,23 @@ type="radio"のときラジオボタン。<br>
   value属性に文字列を入れることを忘れないようにしましょう。(ただし初期選択欄には、入れないほうがいいです。)
 </p>
 </details>
-  <a href="" download="Sample3.html">サンプルのダウンロード</a><br>
+  <a id="DL" href="" download="Sample3.html">サンプルのダウンロード</a><br>
   <a href="../2/index.html">＜＜前のサンプル</a>　　<a href="../4/index.html">＞＞次のサンプル</a><br>
   <a href="../../index.html">トップページ</a>
 </html>
+<script>
+  document.getElementById("DL").href="<html>"+
+  "<h1>Sample3</h1>"+
+  "inputタグ(text)です。valueで中身を設定できます。:<input type=\"text\"/><br>"
+  "inputタグ(password)です。:<input type=\"password\"/><br>"+
+  "<input type=\"button\" value=\"inputタグ(button)です。\"/><br>"+
+  "buttonタグです。inputタグ(button)と基本変わりません。:<buttton>button</button><br>"+
+  "<input type=\"radio\"/>inputタグ(ラジオボタン)です。<br>"+
+  "<input type=\"checkbox\">inputタグ(チェックボックス)です。<br>"+
+  "selectタグです。プルダウンメニューを作れます。：<select>"+
+  "  <option value="">選択</option>"+
+  "  <option value=\"apple\">りんご</option>"+
+  "  <option value=\"pieach\">もも</option>"+
+  "  <option value=\"grape\">ぶどう</option>"+
+  "</select>"
+</script>
