@@ -1,7 +1,32 @@
-<html>
-  <h1>html Sample!</h1>
-  <a href="Samples/1/index.html">Sample_No.1</a><br>
-  <a href="Samples/2/index.html">Sample_No.2</a><br>
-  <a href="Samples/3/index.html">Sample_No.3</a><br>
-  <a href="Samples/4/index.html">Sample_No.4</a><br>
+<head style="position: relative;">
+    <header style="background-color:aqua;position: sticky;position: -webkit-sticky;top:0px;">
+        <span style="display:flex;align-items:center;justify-content: space-between;">
+            <span style="font-weight: bold;font-size: 28px;">HTMLSamples</span>
+            <a href="https://github.com/Neutrino7023" style="display:flex;align-items:center;justify-content: space-between;">
+                <img src="https://avatars.githubusercontent.com/u/75267623?s=40&v=4" width="40px" height="40px"
+                    style="border-radius: 50%;padding: 6px;">
+                <span style="size: 20px;padding: 6px;color: black;">Neutrino7023</span>
+            </a>
+        </span>
+    </header>
+</head>
+<main style="margin-top: 20px;">
+    <span>
+        HTMLのサンプルたちです。javascriptとか、cssとかもいつか書くかも.....
+    </span>
+    <ul style="background-color:lightgray ;width: 200px;border: 1px solid;" id="index"></ul>
+    <span>
+        サンプルのダウンロード
+    </span>
+    <a href=""></a><br>
+    <a href=""></a>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+</main>
 </html>
+<script>
+for(var i=1;i<=4;i++){//i<=xを変えるだけでいい
+    document.getElementById("index").innerHTML+="<li>\n<a href=\"Samples/"+i+"/index.html\">Sample_No."+i+"</a>\n</li>";
+}
+</script>
